@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Poppins",sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+:root{
+    --prime:#00ff34;
+}
+body{
+    background-color: #131b2b;
+
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 30px 120px;
+     background-color:transparent; 
+    justify-content: space-between;
+    z-index: 1111;
+    transition: 0.5 ease;
+}
+.logo{
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.logo B{
+
+    color: var(--prime);
+}
+ol{
+    display: flex;
+    margin :auto 0;
+}
+ol li {
+   
+    list-style: none;
+    margin-right: 20px;
+
+}
+ol li a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+ol li:hover a  {
+    color: var(--prime);
+}
+.view
+{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+.home
+{
+    display: flex;
+    min-height: 120vh;
+    align-items:center;
+    justify-content: center;
+    clip-path: polygon(0 0,100% 0 ,100% 100% ,80% 95% , 0 100);
+
+}
+.banner
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+
+
+.view{
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+}
+.home{
+    display: flex;
+    min-height: 120vh;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0 ,100% 0 ,100% 100%,80% 95%,0 100%);
+}
+.banner{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: brightness(40%);
+}
+.highlights
+{
+    width: 70%;
+    position: relative;
+    display: inline-block;
+    z-index: 11;
+
+}
+.highlights h3 {
+    display: inline;
+    font-size: 2vw;
+    padding: 5px 20 px;
+    font-weight: lighter;
+    text-transform: capitalize;
+    border-left: 6px solid var(--prime);
+
+}
+.highlights h1{
+    font-size: 9vw;
+    text-align: center;
+    font-weight: normal;
+}
+.highlights b{
+    color: var(--prime);
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.highlights .tagline{
+    color: #d7d7d7;
+    font-size: 1.2vw;
+    text-align: center;
+    font-weight: normal;
+
+}
+.highlights .join{
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-weight: 800;
+    padding: 5px 20px;
+    font-size: 1.5vw;
+    margin-top: 1.2em;
+    color: var(--prime);
+    border: 2px solid var(--prime);
+    border-radius: 50px;
+    background: transparent;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+.highlights .join:hover{
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+    background-color: var(--prime);
+}
+.main{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.main h2{
+    font-size: 2.5vw;
+    position: relative;
+    text-align: center;
+    padding-top: 100px;
+    display: inline-block;
+}
+span{
+    color: var(--prime)
+    
+}
+.main h2:before{
+    position: absolute;
+    content: '';
+    background: var(--prime);
+    height: 3px;
+    width: 30%;
+    right: -15px;
+    bottom: 0;
+    border-radius: 50px;
+}
+.main h6
+{
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+.content{
+    position: relative;
+    display: flex;
+    height: 100%;
+    padding: 0 30px;
+    justify-content: center;
+}
+ .about .content .cols{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px 70px;
+ }
+
+.about .content .cols p b {
+    font-size: 20px;
+    margin-right: 2px;
+
+}
+
+.about .content .cols a{
+    position: relative;
+    top: 20px;
+    color: #fff;
+    background: var(--prime);
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.about .content .cols a:hover{
+    color:#000;
+background-color: #fff;
+
+}
+.about .content .cols .box{
+    position: relative;
+    height: 550px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+
+}
+.about .content .cols .box img{
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.workout .content{
+    flex-wrap:wrap;
+    float: left;
+}
+ .workout .content .frame
+{
+    
+    position: relative;
+    width: 140px;
+    padding: 20px;
+    margin: 10px;
+    background: #222;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+
+}
+  .workout .content .frame .box {
+    position: relative;
+    height: 200px;
+    width: 100px;
+    
+    overflow: hidden;
+    
+ } 
+.workout .content .frame .box img{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: 0.2s ease-in;
+    width: 100%;
+    
+}
+.workout .content .frame .box:hover img
+{
+    filter: brightness(100%);
+    transform: scale(1.08);
+}
+.workout .content .frame .title{
+    color: var(--prime);
+    padding: 5px 0;
+
+}
+.workout .content.frame p{
+    font-size: 0.8em;
+    
+}  
+.trainer .content{
+
+flex-wrap: wrap;
+}
+.trainer .content .frame{
+    position: relative;
+    width: 500px;
+    padding: 30px 30px 40px 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    background-color: #222;
+}
+.trainer .content .frame .box{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+} 
+.trainer .content .frame .box .img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: 0.2s ease-in;
+} 
+.trainer .content .frame .box:hover .img{
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+.trainer .content .frame .headliln{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 8px 0 ;
+}
+.trainer .content .frame .headliln i{
+    height: 22px;
+    width: 22px;
+    border : 1.5px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    margin: 5px;
+    cursor: pointer;
+    line-height: 22px;
+
+}
+.trainer .content .frame .headliln i:hover{
+    border: 1.5px solid var(--prime);
+    background: var(--prime);
+}
+.trainer .content .frame .headliln .title{
+    color: var(--prime);
+    font-size: 1.2em;
+
+}
+.trainer .content .frame{
+ font-size: 0.8em;   
+ position: relative
+ button 5px;
+
+}
+.trainer .content .frame a{
+    top: 20px;
+    color: var(--prime);
+    background: transparent;
+    padding: 5px 20 px;
+    border: 1.5px solid var(--prime);
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+.trainer .content .frame a:hover{
+    color: #fff;
+    background: var(--prime);
+}
+.contact .content{
+    
+    min-height: 100vh;
+}
+.contact .content form{
+    margin: auto 0;
+    width: 400px;
+    height: 500px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+    z-index: l;
+}
+.contact .content form input{
+    color: #222;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    font-size: 18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+}
+.contact .content form textarea{
+    width: 100%;
+    padding: 10px;
+    color: #222;
+    font-size:  18px;
+    border: 1px solid #878787;
+    border-radius: 4px;
+    margin: 15px 0;
+    background: transparent;
+} 
+.contact .content form input:focus,
+.contact .content form textarea:focus{
+    border: 2px solid var(--prime);
+    transition: 0.1s ease;
+
+} 
+.contact .content form .btn{
+    letter-spacing: 1px;
+    width: 100px;
+    display: inline-block;
+    color: var(--prime);
+    border-color: var(--prime);
+    cursor: pointer;
+    transition: 0.2s ease;
+
+} 
+.contact .content form .btn:hover{
+    background:var(--prime);
+    color: #fff;
+} 
